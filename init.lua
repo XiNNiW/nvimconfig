@@ -1,0 +1,5 @@
+require("modules.remap")
+require("modules.set")
+require("modules.packer")
+require("modules.autocmds")
+print("true voyage is return")
