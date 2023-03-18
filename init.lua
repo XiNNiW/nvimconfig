@@ -1,5 +1,6 @@
-require("modules.remap")
-require("modules.set")
 require("modules.packer")
+require("modules.set")
 require("modules.autocmds")
+require("modules.remap")
+require("modules.lua_config_debug_util")
 print("true voyage is return")

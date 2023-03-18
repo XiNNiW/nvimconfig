@@ -20,4 +20,4 @@ vim.g.calendar_keys = {
     goto_next_year= '<S-Down>'
 }
 
-
+vim.g.vimwiki_global_ext = 0

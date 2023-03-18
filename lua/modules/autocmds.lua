@@ -39,3 +39,18 @@ autocmd({ "FileType" }, {
 		vim.opt_local.spell = true
 	end,
 })
+
+--[[
+augroup cdpwd
+    autocmd!
+    autocmd VimEnter * cd $PWD
+augroup END
+]]--
+
+augroup('cdpwd', { clear = true})
+autocmd('VimEnter', {
+    group = 'cdpwd',
+    pattern = '*',
+    --command = 'cd $PWD',
+    command = 'cd %:p:h'
+})
